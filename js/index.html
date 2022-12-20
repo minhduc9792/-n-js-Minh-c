@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link rel="stylesheet" href="public/img/themify-icons/themify-icons.css">
+    <script src="public/js/main.js"></script>
+    <script src="public/js/order_detail.js"></script>
+</head>
+  <body>
+    <div id="wrapper">
+        <header class="header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="header-left">
+                            <div style="display: flex;" class="header">
+                                <div class="logo"></div>
+                                <div class="search"><span class="ti-search"></span></div>
+                                <input class="search-btn" type="text" placeholder="Tìm thực đơn">
+                                <button class="room">Phòng Vip 1</button>
+                                <div class="class-a"><span>A</span></div>
+                                <div class="class-b"><span>B</span></div>
+                                <div class="class-c"><span>C</span></div>
+                                <div class="class-d"><span>D</span></div>
+                                <div class="ti-write"></div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="header-right">
+                            <div class="icon-right ti-power-off"></div>
+                            <div class="icon-right ti-menu-alt"></div>
+                            <div class="icon-right ti-cloud"></div>
+                            <div class="icon-right ti-fullscreen"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content container-fluid">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="table">
+                        <div class="title">
+                            <button class="table-header-1 ti-gift">SỐ LƯỢNG KHÁCH NGỒI[1]</button>
+                            <button class="table-header-2 ti-notepad"></button>
+                            <button class="table-header-3 ti-reload"></button>
+                            <button class="table-header-4 ti-bell">KHÁCH GỌI MÓN</button>
+                            <button class="table-header-5 ti-time">BẮT ĐẦU TÍNH GIỜ</button>
+                        </div>
+                        <table class="table-content">
+                            <thead>
+                                <th>#</th>
+                                <th>TÊN HÀNG HÓA</th>
+                                <th>ĐVT</th>
+                                <th>SỐ LƯỢNG</th>
+                                <th>ĐƠN GIÁ</th>
+                                <th>THÀNH TIỀN</th>
+                                <th>#</th>
+                            </thead>
+                            <!-- Render order here -->
+                            <tbody id="order">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-end">
+                        <div style="display: flex;" class="table-end-1">
+                            <input class="seach-kh" type="text" placeholder="Tìm khách hàng">
+                            <div class="ti-layout-media-center"></div>
+                            <div class="ti-plus"></div>
+                            <div class="money-sum">Tổng thành tiền</div>
+                            <input class="money-sum-2" type="text">
+                        </div>
+                        <div style="display: flex;" class="table-end-2">
+                            <div class="table-end-2-time">24/10/2022 12:02</div>
+                            <div class="ti-calendar"></div>
+                            <div class="ti-time"></div>
+                            <div class="table-end-2-ck">Chiết khấu</div>
+                            <div class="ti-gift"></div>
+                            <div class="sum-ck"><input class="sum-ck1" type="text" placeholder="0"></div>
+                        </div>
+                        <div style="display: flex;" class="table-end-3">
+                            <div class="bt-1 kt">Khai trương</div>
+                            <div class=" bt-2 ti-angle-down "></div>
+                            <div class="bt-3 tm">Tiền mặt</div>
+                            <div class="bt-4 ti-angle-down ti-angle-down-1"></div>
+                            <div class="bt-5">VAT</div>
+                            <div class="bt-6">0</div>
+                            <div class="bt-7">1</div>
+                            <div class="bt-8">?</div>
+                            <div class="bt-9">0</div>
+                        </div>
+                        <div style="display: flex;" class="table-end-4">
+                            <div class="table-end-4-one"><input class="table-end-4-one1" type="text" placeholder="Tự động tạo mã (Đơn hàng)"></div>
+                            <div class="table-end-4-two">Tổng cộng</div>
+                            <div class="table-end-4-three"><input class="table-end-4-three1" type="text"></div>
+                        </div>
+                        <div class="table-end-5">
+                            <input class="table-end-5-one" type="text" placeholder="Ghi chú">
+                            <button class="table-end-5-two">Tiền khách trả</button>
+                            <button class="table-end-5-three ti-files"></button>
+                            <button class="table-end-5-four ti-layout-media-center"></button>
+                            <input class="table-end-5-five" type="text">
+                            <button class="table-end-5-six">Tiền thừa</button>
+                            <button class="table-end-5-seven">0</button>
+                        </div>
+                        <div class="table-end-6">
+                            <button class="table-end-6-one ti-reload">Chuyển bàn</button>
+                            <button class="table-end-6-two ti-zip">Báo chế biến [F9]</button>
+                            <button class="table-end-6-three ti-shopping-cart">Thanh toán [F4]</button>
+                            <button class="table-end-6-four ti-cut">Tách bàn</button>
+                            <button class="table-end-6-five ti-zip">Tạm tính [F3]</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="content-right">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-6 mt-3">
+                                    <button class="btn">Đồ ăn</button>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <button class="btn">Đồ uống</button>
+                                </div>
+                            </div>
+                            <!-- Render product here -->
+                            <div class="row" id="product_list">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  
+</html>
